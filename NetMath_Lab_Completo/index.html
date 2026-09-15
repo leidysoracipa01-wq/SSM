@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NetMath Lab | Inicio</title>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="index.html"><span>∑</span> NetMath <b>Lab</b></a>
+  <button class="menu" onclick="toggleMenu()">☰</button>
+  <nav id="nav">
+    <a class="active" href="index.html">Inicio</a>
+    <a href="paginas/temas.html">Temas</a>
+    <a href="paginas/ejercicios.html">Ejercicios</a>
+    <a href="paginas/retos.html">Retos</a>
+    <a href="paginas/calculadoras.html">Calculadoras</a>
+    <a href="paginas/curiosidades.html">Curiosidades</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-text">
+    <span class="tag">PROYECTO 4 · MATEMÁTICAS APLICADAS & ANÁLISIS TÉCNICO</span>
+    <h1>Matemáticas que<br><span>conectan redes.</span></h1>
+    <p>Aprende subnetting, binario, direcciones IP, hosts y redes LAN de una manera interactiva, sencilla y práctica.</p>
+    <div class="actions">
+      <a class="btn primary" href="paginas/temas.html">Explorar temas →</a>
+      <a class="btn ghost" href="paginas/ejercicios.html">Practicar</a>
+    </div>
+  </div>
+  <div class="network-art">
+    <div class="orb">IP</div>
+    <div class="node n1">1010</div><div class="node n2">/24</div>
+    <div class="node n3">2<sup>h</sup>−2</div><div class="node n4">AND</div>
+    <div class="line l1"></div><div class="line l2"></div><div class="line l3"></div><div class="line l4"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-heading"><span>01</span><div><h2>¿Qué encontrarás?</h2><p>Todo lo necesario para comprender las matemáticas detrás de una red LAN.</p></div></div>
+  <div class="cards four">
+    <a class="card" href="paginas/binario.html"><div class="card-icon">01</div><h3>Decimal ↔ Binario</h3><p>Convierte valores y entiende cada bit.</p><strong>Aprender →</strong></a>
+    <a class="card" href="paginas/subnetting.html"><div class="card-icon">⌁</div><h3>Subnetting</h3><p>Divide redes y calcula subredes paso a paso.</p><strong>Aprender →</strong></a>
+    <a class="card" href="paginas/hosts.html"><div class="card-icon">⌂</div><h3>Hosts utilizables</h3><p>Aplica la fórmula 2<sup>h</sup> − 2.</p><strong>Aprender →</strong></a>
+    <a class="card" href="paginas/direcciones.html"><div class="card-icon">IP</div><h3>Direcciones IPv4</h3><p>Identifica red, host y broadcast.</p><strong>Aprender →</strong></a>
+  </div>
+</section>
+
+<section class="search-section">
+  <div class="section-heading"><span>02</span><div><h2>¿Qué quieres aprender?</h2><p>Busca rápidamente un tema dentro de la plataforma.</p></div></div>
+  <div class="search-box"><span>⌕</span><input id="siteSearch" oninput="searchTopics()" placeholder="Buscar: subnetting, binario, hosts, broadcast..."></div>
+  <div id="searchResults" class="search-results"></div>
+</section>
+
+<section class="section formula-banner">
+  <div><span class="mini-tag">FÓRMULA CLAVE</span><h2>N<sub>subredes</sub> = 2<sup>s</sup></h2><p>s representa los bits prestados de la porción de host.</p></div>
+  <a class="btn primary" href="paginas/formulas.html">Ver todas las fórmulas</a>
+</section>
+
+<section class="section">
+  <div class="section-heading"><span>03</span><div><h2>Aprende practicando</h2><p>Después de estudiar, comprueba cuánto aprendiste.</p></div></div>
+  <div class="cards three">
+    <a class="feature" href="paginas/ejercicios.html"><b>✎</b><div><h3>Ejercicios</h3><p>Preguntas organizadas por dificultad.</p></div><span>→</span></a>
+    <a class="feature" href="paginas/retos.html"><b>★</b><div><h3>Retos</h3><p>Supera niveles y consigue puntos.</p></div><span>→</span></a>
+    <a class="feature" href="paginas/calculadoras.html"><b>⌘</b><div><h3>Calculadoras</h3><p>Resuelve operaciones automáticamente.</p></div><span>→</span></a>
+  </div>
+</section>
+</main>
+
+<footer><b>NetMath Lab</b><span>Plataforma Académica Interactiva · Matemáticas Aplicadas y Redes LAN</span></footer>
+<script src="js/app.js"></script>
+</body>
+</html>
